@@ -12,8 +12,8 @@ jobs:
     steps:
       - name: Set container image name and tag
         run: |
-          echo "::set-output name=image-name::golang"
-          echo "::set-output name=tag::1.18"
+          echo "image-name=golang" >> $GITHUB_OUTPUT
+          echo "tag=1.18" >> $GITHUB_OUTPUT
         id: container
       - name: Check out the repo
         uses: actions/checkout@v2
