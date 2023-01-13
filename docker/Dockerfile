@@ -1,7 +1,7 @@
 FROM ghcr.io/kumanoryo/debian-fish:bullseye
 #
 # set env
-ENV GOLANG_VERSION=1.18.8
+ENV GOLANG_VERSION=1.18.10
 ENV PATH /usr/local/go/bin:$PATH
 
 #
